@@ -1,0 +1,16 @@
+<robot name="simple_robot">
+    <link name="base_link">
+        <visual>
+            <material name="green">
+                <color rgba="0 1 0 1"/>
+            </material>
+            <geometry>
+                <cylinder length="1.0" radius="0.1"/>
+            </geometry>
+        </visual>
+    </link>
+    <joint name="base_joint" type="fixed">
+        <parent link="world"/>
+        <child link="base_link"/>
+    </joint>
+</robot>
